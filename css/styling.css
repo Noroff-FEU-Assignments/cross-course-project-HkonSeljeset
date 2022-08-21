@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Silkscreen&display=swap');
+
+body {
+    display: block;
+    margin: 0;
+    font-family:Silkscreen, Roboto, Poppins,'Times New Roman', Times, serif ;
+    max-width: 100%;
+    height: auto; 
+    background: -moz-linear-gradient(-45deg,rgba(60, 207, 209, 0.149),rgb(26, 105, 157));
+    min-height: 100vh;
+    text-align: center;
+}
+
+.navbar {
+    background: rgb(97, 126, 148);
+    padding: 1em;
+}
+
+.primaryNav{
+    
+    text-decoration: none;
+    margin-top: 5em;
+}
+
+
+.logo {
+    width: auto;
+    height: auto;
+}
+
+.mobileMenu{
+    width: 2em;
+    height: 2em;
+}
+
+.profileCTA{
+    width: 4em;
+    height: 4em;
+}
+
+.searchIcon{
+    width: 2em;
+    height:2em
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto; 
+}
+
+h1 {
+    float: center;
+    font-family: Silkscreen;
+}
+
+.searchbar {
+    float: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1px 1px;
+  text-decoration: none;
+  font-family: Silkscreen;
+  font-size: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  
+}
+
+
+nav.menu-btn{
+    display: block;
+}
+
+nav{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    left: 0;
+    top:0;
+    
+    height: 100vh;
+    padding: 1em;
+}
+
+.mobileMenuExit{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+    width: 3em;
+    height: auto;
+
+}
+
+.container{
+    display: flex;
+    place-content: space-between;
+}
+
+.mobileMenu{
+    cursor:pointer;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+.ctaLogin{
+    background-color:brown;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.4 em;
+    border-radius: 5em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.ctaRegister{
+    background-color:blue;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.4 em;
+    border-radius: 5em;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.settings{
+    display: block;
+    padding: 1em;
+    color: rgb(0, 40, 170);
+}
+
+.searchbar{
+    display: inline-block;
+}
+
+.products{
+    background: rgba(113, 110, 110, 0.428);
+    padding:auto;
+}
+.productCTA{
+    background-color:brown;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.4 em;
+    border-radius: 5em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.gridStore{
+    display: grid;
+}
+
+@media only screen and (min-width:768px) {
+    .mobileMenu, .mobileMenuExit {
+        display: none;
+    }
+
+    .navbar nav {
+        display: flex;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+}
