@@ -12,16 +12,19 @@ body {
 }
 
 .navbar {
-    background: rgb(97, 126, 148);
-    padding: 1em;
+    
 }
 
 .primaryNav{
-    
     text-decoration: none;
     margin-top: 5em;
 }
 
+.subNav{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
 
 .logo {
     width: auto;
@@ -31,11 +34,13 @@ body {
 .mobileMenu{
     width: 2em;
     height: 2em;
+    cursor:pointer;
+    display: none;
 }
 
 .profileCTA{
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
 }
 
 .searchIcon{
@@ -44,11 +49,8 @@ body {
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto; 
+    max-width: 100em;
+    max-height: 100em;
 }
 
 h1 {
@@ -56,9 +58,15 @@ h1 {
     font-family: Silkscreen;
 }
 
+
+
+li a{
+    text-decoration: none;
+}
+
 .searchbar {
     float: center;
-  display: block;
+  display: flex;
   color: black;
   text-align: center;
   padding: 1px 1px;
@@ -74,7 +82,7 @@ nav.menu-btn{
     display: block;
 }
 
-nav{
+/**nav{
     display: none;
     position: fixed;
     z-index: 999;
@@ -86,8 +94,10 @@ nav{
     height: 100vh;
     padding: 1em;
 }
+**/
 
 .mobileMenuExit{
+    display: none;
     float: right;
     margin: .5em;
     cursor: pointer;
@@ -98,15 +108,20 @@ nav{
 
 .container{
     display: flex;
-    place-content: space-between;
+    background: rgb(97, 126, 148);
+    padding: 1em;
+    
 }
 
-.mobileMenu{
-    cursor:pointer;
+.mainStore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 section{
     padding: 5em 2em;
+    background-color: rgb(116, 158, 194);
 }
 
 .ctaLogin{
@@ -139,7 +154,7 @@ section{
 }
 
 .searchbar{
-    display: inline-block;
+    
 }
 
 .products{
@@ -158,11 +173,9 @@ section{
     margin-top: 1em;
 }
 
-.gridStore{
-    display: grid;
-}
 
-@media only screen and (min-width:768px) {
+
+/** @media only screen and (min-width:768px) {
     .mobileMenu, .mobileMenuExit {
         display: none;
     }
@@ -177,3 +190,4 @@ section{
     }
 
 }
+**/

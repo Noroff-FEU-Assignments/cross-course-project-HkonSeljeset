@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="css/styling.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="container"> 
+    <header>
+      <div class="navbar"> 
         <img id="mobileCTA" class="mobileMenu" src="images\icons/hamburgerMenu.svg" alt="Hamburger menu for navigation">
         <a href="index.html" class="logo"> <img src="images\GameHub_Logo.png" alt="Gamehub Logo, welcome to gamehub."> </a>
         <img id="profileCTA" class="profileCTA" src="images/GameHubLogoNoText.svg" alt="Your profile icon">
-        <nav class="primaryNav">
+        <nav>
           <img id="mobileCTAExit" class="mobileMenuExit" src="images/Icons/reject.png" alt="Exit navigation menu">
-          <h1>Welcome to game hub!</h1>
             <ul>
               <li><a href="index.html"> About us </a></li>
               <li><a href="index.html"> FAQ </a></li>
@@ -24,7 +23,7 @@
               <li><a href="index.html"> My profile </a></li>
             </ul>
         </nav>
-        <nav class="subNav">
+       <!-- <nav class="subNav">
           <ul>
             <li> <a href="Categories"> Categories </a></li>
             <li> <a href="TopSellers"> Top Sellers </a></li>
@@ -35,21 +34,21 @@
             <li> <a href="Recommended"> Recommended for you </a></li>
           </ul>
         </nav>
-        <nav>
+        <nav class="subNav">
           <li> <a class="ctaLogin" href="Login"> Login </a></li>
           <p>or</p>
           <li> <a class="ctaRegister" href="Register"> Register </a></li>
           <li> <a class="settings" href="Settings"> Settings and help</a>
-        </nav>
+        </nav> -->
       </div>
     </header>
     <main>
       <h1>Welcome to game hub!</h1>
-      <section class="">
-        <div class="gridStore">
+      <section>
+        <div class="mainStore">
           <div>
             <h2>Browse our games</h2>
-            <a href="Store"> <img src="images/pixelStore.png" alt="Buy games"></a>
+            <a href="Store"> <img src="images/pixelStore.png" class="storeImg" alt="Buy games"></a>
           </div>
           <h2>or</h2>
           <div>  
@@ -57,9 +56,9 @@
             <a href="SellStore"> <img src="images/sellGames.jpg" alt="Sell games"></a>
           </div>
         </div> 
+        <input type="text" placeholder="Search our games.." class="searchbar">
+        <img class="searchIcon" src="images/Icons/searchIcon.png" alt="Searchbar">
       </section>
-      <input type="text" placeholder="Search our games.." class="searchbar">
-            <img class="searchIcon" src="images/Icons/searchIcon.png" alt="Searchbar">
       <section> 
         <div class="products">
           <h2>This weeks super deals:</h2>
