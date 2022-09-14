@@ -1,34 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Silkscreen&display=swap');
 
 body {
-    display: block;
+    display: flex;
     margin: 0;
     font-family:Silkscreen, Roboto, Poppins,'Times New Roman', Times, serif ;
     max-width: 100%;
     height: auto; 
     background: -moz-linear-gradient(-45deg,rgba(60, 207, 209, 0.149),rgb(26, 105, 157));
-    min-height: 100vh;
+    min-height: auto;
     text-align: center;
 }
 
-.navbar {
-    
+h1 {
+    float: center;
+    font-family: Silkscreen;
 }
 
-.primaryNav{
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 16px;
     text-decoration: none;
-    margin-top: 5em;
 }
 
-.subNav{
+.container{
+    display: flex;
+    flex-direction: column;
+    background: rgb(97, 126, 148);
+    padding: 5px;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgb(97, 126, 148);
+    position: fixed;
+}
+
+.store{
+    display: flex;
+    flex-direction: row;
+}
+
+.whatAreYaBuyin{
+    width: 200px;
+    height: 200px;
+}
+
+.mainStore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mainStoreImages{
+    width: 200px;
+    height: 200px;
+}
+
+section{
+    padding: 5em 2em;
+    background-color: rgb(116, 158, 194);
+}
+
+/**nav{
+    text-decoration: none;
+    list-style-type: disc;
+} Har ingenting å sei? må vere en anna class som har fjerna underline. må fikse**/
+
+/**.subNav{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
+**/
 
 .logo {
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
 }
 
 .mobileMenu{
@@ -39,30 +99,18 @@ body {
 }
 
 .profileCTA{
+    order: 3;
     width: 5em;
     height: 5em;
+    float: right;
 }
 
 .searchIcon{
-    width: 2em;
-    height:2em
-}
-
-img {
-    max-width: 100em;
-    max-height: 100em;
-}
-
-h1 {
-    float: center;
-    font-family: Silkscreen;
+    width: 20px;
+    height:20px;
 }
 
 
-
-li a{
-    text-decoration: none;
-}
 
 .searchbar {
     float: center;
@@ -106,24 +154,6 @@ nav.menu-btn{
 
 }
 
-.container{
-    display: flex;
-    background: rgb(97, 126, 148);
-    padding: 1em;
-    
-}
-
-.mainStore{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-section{
-    padding: 5em 2em;
-    background-color: rgb(116, 158, 194);
-}
-
 .ctaLogin{
     background-color:brown;
     color: white;
@@ -147,7 +177,7 @@ section{
     display: inline-block;
 }
 
-.settings{
+/**.settings{
     display: block;
     padding: 1em;
     color: rgb(0, 40, 170);
@@ -156,7 +186,7 @@ section{
 .searchbar{
     
 }
-
+**/
 .products{
     background: rgba(113, 110, 110, 0.428);
     padding:auto;

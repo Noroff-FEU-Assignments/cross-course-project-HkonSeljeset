@@ -8,52 +8,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styling.css" />
   </head>
-  <body>
+  <body class="container">
     <header>
       <div class="navbar"> 
         <img id="mobileCTA" class="mobileMenu" src="images\icons/hamburgerMenu.svg" alt="Hamburger menu for navigation">
         <a href="index.html" class="logo"> <img src="images\GameHub_Logo.png" alt="Gamehub Logo, welcome to gamehub."> </a>
-        <img id="profileCTA" class="profileCTA" src="images/GameHubLogoNoText.svg" alt="Your profile icon">
+        <h1>Welcome to game hub!</h1>
+        <img id="profileCTA" href="profile.html" class="profileCTA" src="images/GameHubLogoNoText.svg" alt="Your profile icon">
         <nav>
           <img id="mobileCTAExit" class="mobileMenuExit" src="images/Icons/reject.png" alt="Exit navigation menu">
             <ul>
-              <li><a href="index.html"> About us </a></li>
-              <li><a href="index.html"> FAQ </a></li>
-              <li><a href="index.html"> Cart </a></li>
-              <li><a href="index.html"> My profile </a></li>
+              <li><a href="about.html"> About us </a></li>
+              <li><a href="faq.html"> FAQ </a></li>
+              <li><a href="cart.html"> Cart </a></li>
+              <li><a href="profile.html"> My profile </a></li>
             </ul>
         </nav>
-       <!-- <nav class="subNav">
+      </div>
+    </header>
+    <main>
+      <!-- <section class="store">
+        <nav class="subNav">
           <ul>
-            <li> <a href="Categories"> Categories </a></li>
-            <li> <a href="TopSellers"> Top Sellers </a></li>
-            <li> <a href="SpecialOffers"> Special offers </a></li>
-            <li> <a href="NewReleases"> New releases </a></li>
-            <li> <a href="ComingSoon"> Coming soon </a></li>
-            <li> <a href="FreeToPlay"> Free to play  </a></li>
-            <li> <a href="Recommended"> Recommended for you </a></li>
+            <li> <a href="categories"> Categories </a></li>
+            <li> <a href="topSellers"> Top Sellers </a></li>
+            <li> <a href="specialOffers"> Special offers </a></li>
+            <li> <a href="newReleases"> New releases </a></li>
+            <li> <a href="comingSoon"> Coming soon </a></li>
+            <li> <a href="freeToPlay"> Free to play  </a></li>
+            <li> <a href="recommended"> Recommended for you </a></li>
           </ul>
         </nav>
-        <nav class="subNav">
+        <nav class="#">
           <li> <a class="ctaLogin" href="Login"> Login </a></li>
           <p>or</p>
           <li> <a class="ctaRegister" href="Register"> Register </a></li>
           <li> <a class="settings" href="Settings"> Settings and help</a>
-        </nav> -->
-      </div>
-    </header>
-    <main>
-      <h1>Welcome to game hub!</h1>
-      <section>
+        </nav>
+      -->
         <div class="mainStore">
           <div>
             <h2>Browse our games</h2>
-            <a href="Store"> <img src="images/pixelStore.png" class="storeImg" alt="Buy games"></a>
+            <a href="Store"> <img src="images/pixelStore.png" class="whatAreYaBuyin" alt="Buy games"></a>
           </div>
           <h2>or</h2>
           <div>  
             <h2>Sell your old games</h2>
-            <a href="SellStore"> <img src="images/sellGames.jpg" alt="Sell games"></a>
+            <a href="SellStore"> <img src="images/sellGames.jpg" class="whatAreYaBuyin" alt="Sell games"></a>
           </div>
         </div> 
         <input type="text" placeholder="Search our games.." class="searchbar">
@@ -63,11 +64,11 @@
         <div class="products">
           <h2>This weeks super deals:</h2>
           <a class="productCTA" href="productPage"> Player Unknowns Battlegrounds</a>
-          <img src="images/Pubg.jpg" alt="Player Unkowns Battlegrounds on sale">
+          <img src="images/Pubg.jpg" class="mainStoreImages" alt="Player Unkowns Battlegrounds on sale">
           <a class="productCTA" href="productPage"> Heroes Of might and Magic</a>
-          <img src="images/hommStart.jpg" alt="Heroes Of Might and Magic on sale">
+          <img src="images/hommStart.jpg" class="mainStoreImages" alt="Heroes Of Might and Magic on sale">
           <a class="productCTA" href="productPage"> Add to cart</a>
-          <img src="images/valheim.jpg" alt="Valheim on sale">
+          <img src="images/valheim.jpg" class="mainStoreImages" alt="Valheim on sale">
         </div>
       </section>
     </main>
