@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Silkscreen&display=swap');
+
+body {
+    display: flex;
+    margin: 0;
+    font-family:Silkscreen, Roboto, Poppins,'Times New Roman', Times, serif ;
+    max-width: 100%;
+    height: auto; 
+    background: -moz-linear-gradient(-45deg,rgba(60, 207, 209, 0.149),rgb(26, 105, 157));
+    min-height: auto;
+    text-align: center;
+}
+
+h1 {
+    float: center;
+    font-family: Silkscreen;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: rgb(97, 126, 148);
+    padding: 5px;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgb(97, 126, 148);
+    position: fixed;
+}
+
+.store{
+    display: flex;
+    flex-direction: row;
+}
+
+.whatAreYaBuyin{
+    width: 200px;
+    height: 200px;
+}
+
+.mainStore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mainStoreImages{
+    width: 200px;
+    height: 200px;
+}
+
+section{
+    padding: 5em 2em;
+    background-color: rgb(116, 158, 194);
+}
+
+/**nav{
+    text-decoration: none;
+    list-style-type: disc;
+} Har ingenting å sei? må vere en anna class som har fjerna underline. må fikse**/
+
+/**.subNav{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+**/
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.mobileMenu{
+    width: 2em;
+    height: 2em;
+    cursor:pointer;
+    display: none;
+}
+
+.profileCTA{
+    order: 3;
+    width: 5em;
+    height: 5em;
+    float: right;
+}
+
+.searchIcon{
+    width: 20px;
+    height:20px;
+}
+
+
+
+.searchbar {
+    float: center;
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 1px 1px;
+  text-decoration: none;
+  font-family: Silkscreen;
+  font-size: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  
+}
+
+
+nav.menu-btn{
+    display: block;
+}
+
+/**nav{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    left: 0;
+    top:0;
+    
+    height: 100vh;
+    padding: 1em;
+}
+**/
+
+.mobileMenuExit{
+    display: none;
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+    width: 3em;
+    height: auto;
+
+}
+
+.ctaLogin{
+    background-color:brown;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.4 em;
+    border-radius: 5em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.ctaRegister{
+    background-color:blue;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.4 em;
+    border-radius: 5em;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/**.settings{
+    display: block;
+    padding: 1em;
+    color: rgb(0, 40, 170);
+}
+
+.searchbar{
+    
+}
+**/
+.products{
+    background: rgba(113, 110, 110, 0.428);
+    padding:auto;
+}
+.productCTA{
+    background-color:brown;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.4 em;
+    border-radius: 5em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+
+
+/** @media only screen and (min-width:768px) {
+    .mobileMenu, .mobileMenuExit {
+        display: none;
+    }
+
+    .navbar nav {
+        display: flex;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+}
+**/
