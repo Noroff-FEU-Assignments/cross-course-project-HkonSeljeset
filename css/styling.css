@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Silkscreen&display=swap');
 
 body {
-    display: flex;
     margin: 0;
     font-family:Silkscreen, Roboto, Poppins,'Times New Roman', Times, serif ;
     max-width: 100%;
@@ -25,6 +24,10 @@ ul {
     overflow: hidden;
 }
 
+li{
+    float:left
+}
+
 li a {
     display: block;
     color: rgb(0, 0, 0);
@@ -46,11 +49,6 @@ li a {
     justify-content: space-around;
     background: rgb(97, 126, 148);
     position: fixed;
-}
-
-.store{
-    display: flex;
-    flex-direction: row;
 }
 
 .whatAreYaBuyin{
@@ -87,7 +85,7 @@ section{
 **/
 
 .logo {
-    width: 100px;
+    width: 250px;
     height: 100px;
 }
 
