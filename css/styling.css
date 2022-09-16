@@ -101,14 +101,6 @@ section{
     float: right;
 }
 
-.searchIcon{
-    width: 20px;
-    height:20px;
-    background: url(images/Icons/searchIcon.png) no-repeat;
-}
-
-
-
 .searchbar {
     float: center;
     color: black;
@@ -118,7 +110,7 @@ section{
     font-family: Silkscreen;
     font-size: 20px;
     border: 1px solid rgb(0, 0, 0);
-  
+    background: url(images/Icons/searchIcon.png) no-repeat;
 }
 
 
