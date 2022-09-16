@@ -13,6 +13,7 @@ body {
 h1 {
     float: center;
     font-family: Silkscreen;
+    color: rgb(111, 61, 121);
 }
 
 
@@ -34,6 +35,12 @@ li a {
     text-align: center;
     padding: 16px;
     text-decoration: none;
+    font-size: 25px;
+    
+}
+
+footer{
+    background-color: rgb(116, 158, 194);
 }
 
 .container{
@@ -48,7 +55,7 @@ li a {
     flex-direction: row;
     justify-content: space-around;
     background: rgb(97, 126, 148);
-    position: fixed;
+    align-items: flex-end;
 }
 
 .whatAreYaBuyin{
@@ -60,11 +67,12 @@ li a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: rgb(116, 158, 194);
 }
 
 .mainStoreImages{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
 }
 
 section{
@@ -72,21 +80,11 @@ section{
     background-color: rgb(116, 158, 194);
 }
 
-/**nav{
-    text-decoration: none;
-    list-style-type: disc;
-} Har ingenting å sei? må vere en anna class som har fjerna underline. må fikse**/
-
-/**.subNav{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-**/
-
 .logo {
-    width: 250px;
+    width: 200px;
     height: 100px;
+    display: flex;
+
 }
 
 .mobileMenu{
@@ -128,20 +126,6 @@ nav.menu-btn{
     display: block;
 }
 
-/**nav{
-    display: none;
-    position: fixed;
-    z-index: 999;
-    width: 66%;
-    right: 0;
-    left: 0;
-    top:0;
-    
-    height: 100vh;
-    padding: 1em;
-}
-**/
-
 .mobileMenuExit{
     display: none;
     float: right;
@@ -175,16 +159,7 @@ nav.menu-btn{
     display: inline-block;
 }
 
-/**.settings{
-    display: block;
-    padding: 1em;
-    color: rgb(0, 40, 170);
-}
 
-.searchbar{
-    
-}
-**/
 .products{
     background: rgba(113, 110, 110, 0.428);
     padding:auto;
@@ -197,11 +172,44 @@ nav.menu-btn{
     font-size: 1.4 em;
     border-radius: 5em;
     font-weight: 600;
-    display: inline-block;
+    display:flexbox;
     margin-top: 1em;
 }
 
+/**.settings{
+    display: block;
+    padding: 1em;
+    color: rgb(0, 40, 170);
+}
 
+.searchbar{
+    
+}
+**/
+/**nav{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    left: 0;
+    top:0;
+    
+    height: 100vh;
+    padding: 1em;
+}
+**/
+/**nav{
+    text-decoration: none;
+    list-style-type: disc;
+} Har ingenting å sei? må vere en anna class som har fjerna underline. må fikse**/
+
+/**.subNav{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+**/
 
 /** @media only screen and (min-width:768px) {
     .mobileMenu, .mobileMenuExit {
