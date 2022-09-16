@@ -104,20 +104,20 @@ section{
 .searchIcon{
     width: 20px;
     height:20px;
+    background: url(images/Icons/searchIcon.png) no-repeat;
 }
 
 
 
 .searchbar {
     float: center;
-  display: flex;
-  color: black;
-  text-align: center;
-  padding: 1px 1px;
-  text-decoration: none;
-  font-family: Silkscreen;
-  font-size: 20px;
-  border: 1px solid rgb(0, 0, 0);
+    color: black;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    font-family: Silkscreen;
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0);
   
 }
 
@@ -181,9 +181,7 @@ nav.menu-btn{
     padding: 1em;
     color: rgb(0, 40, 170);
 }
-
-.searchbar{
-    
+  
 }
 **/
 /**nav{
