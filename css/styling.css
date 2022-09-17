@@ -13,7 +13,8 @@ body {
 h1 {
     float: center;
     font-family: Silkscreen;
-    color: rgb(111, 61, 121);
+    color: rgb(244, 244, 244);
+    font-size: 40px;
 }
 
 
@@ -43,6 +44,10 @@ footer{
     background-color: rgb(116, 158, 194);
 }
 
+p {
+    font-size: 30px;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -56,11 +61,13 @@ footer{
     justify-content: space-around;
     background: rgb(97, 126, 148);
     align-items: flex-end;
+    border-bottom: 10px double;
+
 }
 
 .whatAreYaBuyin{
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 300px;
 }
 
 .mainStore{
@@ -84,7 +91,14 @@ section{
     width: 200px;
     height: 100px;
     display: flex;
+}
 
+.logo2 {
+    padding-top: 50px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .mobileMenu{
@@ -110,9 +124,13 @@ section{
     font-family: Silkscreen;
     font-size: 20px;
     border: 1px solid rgb(0, 0, 0);
-    background: url(images/Icons/searchIcon.png) no-repeat;
+    /**background-size: ;
+    background: url(../Icons/searchIcon.png) no-repeat;**/
 }
 
+.relative{
+    position: relative;
+}
 
 nav.menu-btn{
     display: block;
@@ -140,6 +158,18 @@ nav.menu-btn{
     margin-top: 1em;
 }
 
+.faq{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact{
+    
+}
+
+
+
 .ctaRegister{
     background-color:blue;
     color: white;
@@ -154,7 +184,9 @@ nav.menu-btn{
 
 .products{
     background: rgba(113, 110, 110, 0.428);
-    padding:auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 .productCTA{
     background-color:brown;
@@ -164,10 +196,26 @@ nav.menu-btn{
     font-size: 1.4 em;
     border-radius: 5em;
     font-weight: 600;
-    display:flexbox;
     margin-top: 1em;
+    position: absolute;
+    
 }
 
+.breadcrumb{
+    text-decoration: underline;
+}
+
+ul.breadcrumb li a:hover {
+    color: #f0f0f1;
+    text-decoration: underline;
+  }
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+
+  
 /**.settings{
     display: block;
     padding: 1em;
@@ -201,7 +249,8 @@ nav.menu-btn{
 }
 **/
 
-/** @media only screen and (min-width:768px) {
+/** 
+@media only screen and (min-width:768px) {
     .mobileMenu, .mobileMenuExit {
         display: none;
     }
@@ -209,11 +258,5 @@ nav.menu-btn{
     .navbar nav {
         display: flex;
     }
-
-    .container{
-        display: grid;
-        grid-template-columns: 180px auto;
-    }
-
 }
 **/
