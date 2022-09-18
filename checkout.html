@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Buy and sell, new and used games online." />
+    <title>Game Hub | Home </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styling.css" />
+  </head>
+  <body class="container">
+    <header>
+      <div class="navbar"> 
+        <img id="mobileCTA" class="mobileMenu" src="images\icons/hamburgerMenu.svg" alt="Hamburger menu for navigation">
+        <a href="index.html" class="logo"> <img src="images\GameHub_Logo.png" alt="Gamehub Logo, welcome to gamehub."> </a>
+        <h1>Your cart</h1>
+        <img id="profileCTA" class="profileCTA" src="images/GameHubLogoNoText.svg" alt="Your profile icon">
+        <nav>
+          <img id="mobileCTAExit" class="mobileMenuExit" src="images/Icons/reject.png" alt="Exit navigation menu">
+            <ul>
+              <li><a href="index.html"> About us </a></li>
+              <li><a href="index.html"> FAQ </a></li>
+              <li><a href="index.html"> Cart (1) </a></li>
+              <li><a href="index.html" class="breadcrumb"> Store </a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="checkoutGrid">
+      <section class="">  
+        <div class="storeGrid2 ">
+          <p class="border2">Game name</p>
+          <p class="border2">Tax</p>
+          <p class="white">Price</p>
+        </div>
+        <div class="storeGrid3">
+          <p class="border2">Valheim <img src="/images/Valheim-Phone-Wallpaper.png" href="product.html" alt="Valheim" class="miniImage"></p>
+          <p class="border2">50%</p>
+          <p>20$</p>
+        </div>
+        <br>
+        <div class="storeGrid3">
+          <p class="border2">Total: </p>
+          <p class="border2">50%</p>
+          <p>30$</p>
+        </div>
+        <div class="">
+        <a class="productCTA" href="checkout.html"> Proceed to billing</a>
+        <a class="productCTA" href="store.html"> Back to store</a>
+        </div>
+      </section>
+      <div>
+        <h2>Shipping details</h2>
+        <form action="/action_page.php">
+          <label for="fname">Full name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Country:</label><br>
+          <input type="text" id="lname" name="lname" value="Norway?"><br><br>
+          <label for="lname">Street adress:</label><br>
+          <input type="text" id="lname" name="lname" value="Your adress"><br><br>
+          <input type="text" id="lname" name="lname" value="please"><br><br>
+          <label for="lname">Postcode/ZIP:</label><br>
+          <input type="text" id="lname" name="lname" value="####"><br><br>
+          <label for="lname">Email:</label><br>
+          <input type="text" id="lname" name="lname" value="mail@gmail.com"><br><br>
+          <label for="lname">Phone:</label><br>
+          <input type="text" id="lname" name="lname" value="+4769666692"><br><br>
+        </form> 
+      </div>
+      <div>
+        <h2>Your order</h2>
+        <h3>Product</h3>
+        <p class="pFont">1 * game</p>
+        <h3>Shipping: free<h3>
+        <h2>total: 30$</h2>
+        <h2>Payment method:</h2>
+        <h3>visa</h3>
+        <div class="row">
+          <label for="lname">Credit card number:</label><br>
+          <input type="text" id="lname" name="lname" value=""><br><br>
+          <label for="lname">mm/yy cvc</label><br>
+          <input type="text" id="lname" name="lname" value=""><br><br>
+        </div>
+        <h3>or</h3>
+        <div>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">paypal</label><br><br>
+        </div>
+        <a class="productCTA" href="checkoutSuccess.html"> Proceed</a>
+        <input type="submit" value="Submit" href="checkoutSuccess.html">
+      </div>
+    </main>
+  </body>
+  <footer>Copyright: The Heken Corporation 2022 &copy;</footer>
+</html>

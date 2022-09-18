@@ -82,9 +82,112 @@ p {
     height: 300px;
 }
 
+.storeImages{
+    width: 700px;
+    height: 1400px;
+    padding: 10px;
+}
+
+.store{
+    display:flex;
+    flex-direction: column;
+    width: 800px;
+     
+}
+
+.storeColumn{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 10px;
+    
+}
+
+.storeGrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: rgb(19, 38, 47);
+}
+.storeGrid2{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: rgb(19, 38, 47);
+}
+
+.storeGrid3{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 4px;
+    background-color: rgb(19, 38, 47);
+    color: aliceblue;
+    margin: 3px;
+}
+
+.storeGridActive{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 6px;
+    background-color: rgb(19, 38, 47);
+    color: aliceblue;
+    border-color: rgb(16, 216, 216);
+    padding: 3px;
+}
+
+.checkoutGrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.absolute{
+    position: absolute; 
+}
+
+.miniImage{
+    width: 100px;
+    height: 60px;
+    
+}
+.border{
+    border-style: solid;
+    border-width: 2px;
+    font-size: larger;
+    color: aliceblue;
+    padding: 2 px;
+}
+.border2{
+    color: aliceblue;
+    border-right: solid 2px;
+}
+
+.white{
+    color: aliceblue;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row1{
+    justify-content: space-around;
+}
+
 section{
     padding: 5em 2em;
     background-color: rgb(116, 158, 194);
+}
+
+.productImage{
+    height: 250px;
+    width: 400px;
 }
 
 .logo {
@@ -99,6 +202,13 @@ section{
     height: 200px;
     display: flex;
     justify-content: center;
+}
+
+.cleanLogo{
+    
+    padding-top: 50px;
+    width: 400px;
+    height: 200px;
 }
 
 .mobileMenu{
@@ -124,6 +234,11 @@ section{
     font-family: Silkscreen;
     font-size: 20px;
     border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: blueviolet;
     /**background-size: ;
     background: url(../Icons/searchIcon.png) no-repeat;**/
 }
@@ -164,21 +279,17 @@ nav.menu-btn{
     justify-content: space-around;
 }
 
-.contact{
-    
-}
-
-
 
 .ctaRegister{
     background-color:blue;
     color: white;
     text-decoration: none;
-    padding: .6em 1.3em;
-    font-size: 1.4 em;
+    padding:
+    font-size: medium;
     border-radius: 5em;
     font-weight: 600;
     display: inline-block;
+    position: absolute;
 }
 
 
@@ -201,6 +312,10 @@ nav.menu-btn{
     
 }
 
+.pFont{
+    font-size: large;
+}
+
 .breadcrumb{
     text-decoration: underline;
 }
@@ -214,8 +329,9 @@ ul.breadcrumb li+li:before {
   padding: 8px;
   color: black;
   content: "/\00a0";
+}
 
-  
+
 /**.settings{
     display: block;
     padding: 1em;
@@ -249,14 +365,18 @@ ul.breadcrumb li+li:before {
 }
 **/
 
-/** 
-@media only screen and (min-width:768px) {
+
+@media only screen and (max-width:1342px) {
     .mobileMenu, .mobileMenuExit {
         display: none;
     }
 
     .navbar nav {
+        display: none;
+    }
+
+    body {
         display: flex;
+        flex-direction: column;
     }
 }
-**/
