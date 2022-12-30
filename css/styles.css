@@ -1,0 +1,369 @@
+/*Global*/
+
+body{
+    background-color: #c8d89c;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+footer{
+    display: flex;
+    background-color: #707070;
+    font-size: small;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+p{
+    padding: 2px;
+    margin: 1px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer ul li{
+    font-size: small;
+    color: black;
+    align-items:flex-start;
+}
+nav{
+    display: none;
+}
+li{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-style: bold;
+    color: white; 
+    list-style-type: none;
+    text-decoration: none;
+}
+
+h1{
+    font-family: Vivaldi;
+    padding: 0%;
+    font-size: 2em;
+    margin: 0%;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0%;
+    font-size: 1.3em;
+    color: #f24822;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0%;
+    font-size: 1em;
+    color: #707070;
+}
+
+footer h3{
+    color: rgb(0, 0, 0);
+}
+
+h4{
+    font-size: 0.9em;
+    color: #d97059;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+hr .seperate{
+    border-top: solid;
+}
+
+.cta{
+    border: solid 3px rgb(161, 38, 134);
+    font-family:'Roboto', Arial, Helvetica, sans-serif ;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0px;
+    background-color: #00000049;
+}
+
+/*Header*/
+.topHeader{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #8C2711;
+    padding: 5px 20px 5px 20px;
+}
+
+.topHeader p {
+    margin: 0%;
+}
+
+.mainHeader{
+    display: grid;
+    grid-template-columns: 9fr 0.5fr 0.5fr;
+}
+
+
+.underline{
+    text-decoration: underline solid 2px;
+    color: rgb(0, 0, 0);
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+    background-color: rgb(198, 186, 186);
+    color: white;
+    padding: 35px 40px 20px 15px;
+} 
+
+/*Main*/
+.finder{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 5px;
+    background-color: #313a40;
+}
+
+.go{
+    background-color: #5ddf59;
+    padding: 2px;
+    border: solid;
+    align-self: center;
+}
+
+.searchBar{
+    max-width: 150px;
+    padding: 5px;
+    align-items: center;
+}
+
+.indexCard{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+}
+
+.indexGutter{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    border: solid;
+    margin: 10px;
+}
+
+
+.seperate{
+    border:solid 2px black;
+}
+
+/*about*/
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+/*shopList*/
+.border{
+    border: solid;
+}
+
+.rowSpace{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Img classes*/
+.userIcon {
+    width: 40px;
+    padding: 8px;
+}
+.heroImage{
+    object-fit: cover;
+    max-height: 300px;
+    width: 100%;
+    min-width: 450px;
+}
+
+.mobileImage{
+    object-fit:cover;
+    width: auto;
+    max-height: 200px;
+}
+
+.hero{
+    width: 100%;
+    height: 300px;
+}
+
+.heroText{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+    font-size: 1.5em;
+}
+
+.daShop{
+    max-width: 20%;
+    width: auto;
+    padding: 1em;
+}
+
+.reviewImage{
+    align-self: center;
+    max-width: 50%;
+    width: auto;
+    padding: 5px;
+}
+.repeat{
+    align-self: center;
+    max-width: 30%;
+    width: auto;
+}
+
+.menuImage{
+    max-width: 30%;
+    height: auto;
+    margin: 2px;
+}
+
+/* Large devices (laptops/desktops, 900px and up) */
+@media only screen and (min-width: 900px) {
+
+header div label{
+display: none;
+}
+
+nav{
+    color: rgb(0, 0, 0);
+    margin: 0%;  
+    display: inline;
+    position: relative;
+    padding: 4px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainHeader{
+    display: grid;
+    grid-template-columns: 9fr 0.5fr 0.5fr;
+}
+
+
+.nav li{
+    display: inline;
+    padding-left: 10%;
+    align-items: flex-end;
+}
+
+.topHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #8C2711;
+    padding: 5px 20px 5px 20px;
+}
+
+.navGrid{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+    'seven seven nine nine nine nine eight'    
+}
+
+.grid{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+    'top top top top top'
+    'top2 top2 top2 top2 top2'
+    'one one two two three'
+    '. . . . three'
+}
+
+.topItem1{
+    grid-area: top;
+}
+
+.topItem2{
+    grid-area: top2;
+}
+
+.navItem1{
+    grid-area: seven;
+}
+
+.navItem2{
+    grid-area: eight;
+}
+
+.navItem3{
+    grid-area: nine;
+}
+
+.item1{
+    grid-area: one;
+}
+
+.item2{
+    grid-area: two;
+}
+
+.item3{
+    grid-area: three;
+}
+
+.item4{
+    grid-area: four;
+}
+
+.item5{
+    grid-area: five;
+}
+
+.item6{
+    grid-area: six;
+}
+
+}

@@ -1,85 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Buy and sell, new and used games online." />
-    <title>Game Hub | Home </title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styling.css" />
-  </head>
-  <body class="container">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home to the best coffee servable in Norway">
+    <meta name="keywords" content="Coffee, Coffee bar, fair trade">
+    <script src="https://kit.fontawesome.com/ef3776e498.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Consious Coffee | Home</title>
+</head>
+<body>
     <header>
-      <div class="navbar"> 
-        <img id="mobileCTA" class="mobileMenu" src="images\icons/hamburgerMenu.svg" alt="Hamburger menu for navigation">
-        <a href="index.html" class="logo"> 
-          <img src="images\GameHub_Logo.png" alt="Gamehub Logo, welcome to gamehub." style="width: 100%;">  </a>
-        <h1>Welcome to game hub!</h1>
-        <img id="profileCTA" href="profile.html" class="profileCTA" src="images/GameHubLogoNoText.svg" alt="Your profile icon">
-        <nav>
-          <img id="mobileCTAExit" class="mobileMenuExit" src="images/Icons/reject.png" alt="Exit navigation menu">
-            <ul>
-              <li><a href="about.html"> About us </a></li>
-              <li><a href="faq.html"> FAQ </a></li>
-              <li><a href="cart.html"> Cart </a></li>
-              <li><a href="store.html"> Store </a></li>
-            </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <!-- <section class="store">
-        <nav class="subNav">
-          <ul>
-            <li> <a href="categories"> Categories </a></li>
-            <li> <a href="topSellers"> Top Sellers </a></li>
-            <li> <a href="specialOffers"> Special offers </a></li>
-            <li> <a href="newReleases"> New releases </a></li>
-            <li> <a href="comingSoon"> Coming soon </a></li>
-            <li> <a href="freeToPlay"> Free to play  </a></li>
-            <li> <a href="recommended"> Recommended for you </a></li>
-          </ul>
-        </nav>
-        <nav class="#">
-          <li> <a class="ctaLogin" href="Login"> Login </a></li>
-          <p>or</p>
-          <li> <a class="ctaRegister" href="Register"> Register </a></li>
-          <li> <a class="settings" href="Settings"> Settings and help</a>
-        </nav>
-      -->
-        <div class="mainStore">
-          <div>
-            <h2>Browse our games</h2>
-            <a href="store"> <img src="images/pixelStore.png" class="whatAreYaBuyin" alt="Buy games"></a>
-          </div>
-          <div>
-            <h2>or</h2>
-            <input type="text" placeholder="Search our games.." class="searchbar">
-          </div>
-          <div>  
-            <h2>Sell your old games</h2>
-            <a href="store"> <img src="images/sellGames.jpg" class="whatAreYaBuyin" alt="Sell games"></a>
-          </div>
-        </div> 
-      </section>
-      <section> 
-        <h2>This weeks super deals:</h2>
-        <div class="products">
-          <div class="relative">  
-            <a class="productCTA" href="productPage"> Player Unknowns Battlegrounds</a>
-            <img src="images/Pubg.jpg" class="mainStoreImages" alt="Player Unkowns Battlegrounds on sale">
-          </div>
-          <div>
-          <a class="productCTA" href="productPage"> Heroes Of might and Magic</a>
-          <img src="images/hommStart.jpg" class="mainStoreImages" alt="Heroes Of Might and Magic on sale">
-          </div>
-          <div>
-          <a class="productCTA" href="productPage"> Valheim</a>
-          <img src="images/valheim.jpg" class="mainStoreImages" alt="Valheim on sale">
-          </div>
+        <div class="topHeader">
+            <div>
+                <a href="#">Covid-19 info - click here.</a>
+            </div>
+            <div>
+                <p>World class coffee</p>
+            </div>
+            <div>
+                <a href="#">My page </a>
+                <a href="#">F.A.Q </a>
+                <a href="#">Get more coffee</a>
+            </div>
         </div>
-      </section>
+        <div class="mainHeader navGrid">
+            <div class="navItem1">
+                <h1>Concsious Coffees</h1>
+            </div>
+            <img src="icons/user.png" class="userIcon navItem2" alt="User icon">
+            <label for="hamburger-menu"><i class="fa-solid fa-bars fa-xl"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <nav class="nav navItem3">
+                <ul">
+                    <li><a href="index.html"><span class="underline"> Home </span></a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="shopList.html">Our shops</a></li>
+                    <input type="text" class="searchBar" placeholder="Search..">
+                </ul>
+            </nav>
+        </div>
+    <main class="grid">
+        <section class="hero topItem1">
+            <img src="images/coffee-gc79af1ae6_1280.jpg" class="heroImage" alt="Spillt coffee beans, estheticly pleasing">
+            <div class="heroText">
+                <p>Fantastic coffee <br>
+                    Always <br>
+                    Everywhere</p>
+            </div>
+        </section>
+        <section class="finder topItem2">
+                <h2>Find Concsious coffee near you:</h2>
+                <h3>A good day starts with a brown one!</h3>
+                <div>
+                    <input type="text" class="searchBar" placeholder="Search..">
+                    <a href="#" class="go">GO!</a>
+                </div>    
+        </section>
+        <section class="indexCard item1">
+            <img src="images/coffee-beans-g2c1b1bc68_1280.jpg" class="mobileImage" alt="covfi">
+            <h4>We have all the coffee</h4>
+            <p>Taste it already! It is sooo good.
+                If you dont belive us, click below. 
+                It is so true. Believe it!</p>
+            <a class="cta" href="#">Covfefe!</a>
+        </section>
+        <section class="indexCard item2">
+            <img src="images/relaxing-g29b92d0f9_1280.jpg" class="mobileImage" alt="#">
+            <h4>The best gifts for x-mas are
+                the tasty ones.</h4>
+            <p>Buy a holiday experience for 
+                your bros this year. They will love you.
+                Click below for action.</p>
+            <a class="cta" href="#">hepy holideys!</a>
+        </section>
+        <section class="indexGutter item3">
+            <h3>News and updates</h3>
+            <img src="images/coffee-g0d3f333c5_1280.jpg" class="mobileImage" alt="Cofeeee">
+            <p>You can make drawings in your cafè!</p>
+            <hr class="seperate">
+            <img src="images/old-g469ec45b2_1280.jpg" class="mobileImage" alt="old but gold. homelessness is just a word">
+            <p>Ten scientific reasons why coffee cures homelesness and old age. <span><a href="#">READ HERE!</a></span></p>
+        </section>
+        
     </main>
-    <footer>Copyright: The Heken Corporation 2022 &copy;</footer>
-  </body>
+    <footer>
+        <section>
+            <h3>Locations</h3>
+            <ul>
+                <li><a href="#"></a>North</li>
+                <li><a href="#"></a>South</li>
+                <li><a href="#"></a>East</li>
+                <li><a href="#"></a>West</li>
+            </ul>
+        </section>
+        <section>
+            <h3>My coffee</h3>
+            <ul>
+                <li><a href="#">My profile</a></li>
+                <li><a href="#"></a>My favourites</li>
+                <li><a href="#"></a>My settings</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Contact Us</h3>
+            <p>Phone: +4747474747</p>
+            <p>E-mail: Jerry.smith@isaloser.com</p>
+            <p>Adress: Tiny-town , 6763 <br>
+                West-District <br>
+                West world <br></p>
+        </section>
+        <section>    
+            <h3>Shortcuts</h3>
+            <ul>
+                <li><a href="index.html"><span class="underline"> Home </span></a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="shopList.html">Our shops</a></li>
+            </ul>
+        </section>
+        <section>    
+            <h3>Join our social media</h3>
+            <a href="link" >Facebook</a> 
+            <i class="fa-brands fa-facebook"></i>
+            <br>
+            <a href="link">Instagram</a> 
+            <i class="fa-brands fa-instagram"></i>
+            <br>
+            <a href="link">Twitter</a> 
+            <i class="fa-brands fa-twitter"></i>
+            <br>
+            <a href="link">Youtube</a> 
+            <i class="fa-brands fa-youtube"> </i>
+            <br>
+        </section>    
+    </footer>
+    </header>
+    
+</body>
 </html>
